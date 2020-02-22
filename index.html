@@ -4,73 +4,145 @@
         <title>Site New Design</title>
         <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
         <link href="css/materialize.css" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="css/style.css" type="text/css" rel="stylesheet"/>
         <script src="js/jq341.js" type="text/javascript"></script>
         <script src="js/materialize.js" type="text/javascript"></script>
         <script src="js/main.js" type="text/javascript"></script>
+        <script>
+            $(document).ready(function(){
+              $('.sidenav').sidenav();
+            });
+        </script>
     </head>
     <body>
-    <div id="main">
-	
-        <div id="main__logo">
-            <img id="main__img" src="i/main.jpg"/>
-            <p>Пришло время</p><p>Поймать волну!</p>
-            <!--img id="u9_img" class="img " src="i/menu.svg"/-->
-            <ul>
-                <li>Студия</li>
-                <li>Портфолио</li>
-                <li>Контакты</li>
-            </ul>
-        </div>
-        <div id="main__black">
-            <p>(без)С помощью развлекательного и запоминающегося видеоконтента, вы можете повысить узнаваемость бренда для своего бизнеса или веб-сайта.</p>
-            <p class='h'>(сгенерированный Humnst777 (39кб))С помощью развлекательного и запоминающегося видеоконтента, вы можете повысить узнаваемость бренда для своего бизнеса или веб-сайта.</p>
-            <p class='h2'>(оригинал (16мб))С помощью развлекательного и запоминающегося видеоконтента, вы можете повысить узнаваемость бренда для своего бизнеса или веб-сайта.</p>
-            <p class='h3'>(оригинал Humnst777 (39кб))С помощью развлекательного и запоминающегося видеоконтента, вы можете повысить узнаваемость бренда для своего бизнеса или веб-сайта.</p>
-            <ul>
-                <li>Коммерческие ролики</li>
-                <li>Анимационные фильмы</li>
-                <li>Дизайн персонажей</li>
-                <li>Иллюстрации</li>
-            </ul>
+        
+        
+        
+        
+        <div class="container">
+            <nav class="first">
+                <div class="nav-wrapper">
+                    <ul class="right hide-on-med-and-down">
+                        <li><a class="waves-effect" href="#">Студия</a></li>
+                        <li><a class="waves-effect" href="#">Портфолио</a></li>
+                        <li><a class="waves-effect" href="#">Контакты</a></li>
+                    </ul>
+                    <ul id="slide-out" class="sidenav">
+                        <li><a class="waves-effect" href="#">Студия</a></li>
+                        <li><a class="waves-effect" href="#">Портфолио</a></li>
+                        <li><a class="waves-effect" href="#">Контакты</a></li>
+                    </ul>
+                    <a href="#" data-target="slide-out" class="sidenav-trigger "><i class="material-icons">menu</i></a>
+                    <div class="logos">Пришло время<br>поймать волну!</div>
+                </div>
+            </nav>
+            
+            <div class="main__black center-align">
+                <p>С помощью развлекательного и запоминающегося видеоконтента, вы можете повысить узнаваемость бренда для своего бизнеса или веб-сайта.</p>
+                <div class="container">
+                <div class="row">
+                    <div class="col s3 center-align">Коммерческие ролики</div>
+                    <div class="col s3 center-align">Анимационные фильмы</div>
+                    <div class="col s3 center-align">Дизайн персонажей</div>
+                    <div class="col s3 center-align">Иллюстрации</div>
+                </div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col s12 l6">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="i/v1_503.jpg"/>
+                                <span class="card-title">Card Title</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 l6">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="i/v2_503.jpg"/>
+                                <span class="card-title">Card Title</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 l6">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="i/v3_503.jpg"/>
+                                <span class="card-title">Card Title</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 l6">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="i/v4_503.jpg"/>
+                                <span class="card-title">Card Title</span>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
 
+            <div class="main__white center-align">
+                <div class="container">
+                <p>
+                    Средний мобильный пользователь тратит до <span>четырех часов</span>
+                    в день на просмотр видео! И число мобильных пользователей по всему миру неуклонно растет!<br>
+                    Вы можете заметить, что огромный процент просматриваемых видео анимирован!
+                </p>
+                </div>
+            </div>
+
+            <footer class="page-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col l6 s12">
+                            <div class="footer-copyrigt">
+                                <div class="container grey-text text-lighten-4">
+                                    <p>2020 &copy; г.Москва, метро Бауманская, ул. Спартаковская, д.2</p>
+                                    <p>ТЕЛ. 8 920 105 6539,&nbsp; e-mail: artmultik@yandex.ru</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l4 offset-l2 ">
+                            <h5>Menu</h5>
+                            <ul class="">
+                                <li><a class="waves-effect gray-text text-lighten-3" href="#">Студия</a></li>
+                                <li><a class="waves-effect gray-text text-lighten-3" href="#">Портфолио</a></li>
+                                <li><a class="waves-effect gray-text text-lighten-3" href="#">Контакты</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                
+                    
+                
+
+            </footer>
+        
+        
+        
+        
         </div>
-            <div id="main__cart">
-                <div class="main__cart_item">
-                    <img class="main__cart_img" src="i/v1_503.jpg"/>
-                    <p class="main__cart_text"></p>
-                </div>
-                <div class="main__cart_item">
-                    <img class="main__cart_img" src="i/v2_503.jpg"/>
-                    <p class="main__cart_text"></p>
-                </div>
-                <div class="main__cart_item">
-                    <img class="main__cart_img" src="i/v3_503.jpg"/>
-                    <p class="main__cart_text"></p>
-                </div>
-                <div class="main__cart_item">
-                    <img class="main__cart_img"src="i/v4_503.jpg"/>
-                    <p class="main__cart_text"></p>
-                </div>
-                <div style="clear:both;"/>
+        <!--         
+        
+        
+        
+		<div id="main__footer">
+                    
+                    
 		</div>
-		<div id="main__info">
-                    <p>
-                        <span style="font-family:'Humnst777 BT Roman', 'Humnst777 BT', sans-serif;font-weight:400;">Средний мобильный пользователь тратит до </span>
-                        <span style="font-family:'Humnst777 BT Bold', 'Humnst777 BT Roman', 'Humnst777 BT', sans-serif;font-weight:700;">ЧЕТЫРЕХ ЧАСОВ</span>
-                        <span style="font-family:'Humnst777 BT Roman', 'Humnst777 BT', sans-serif;font-weight:400;"> в день на просмотр видео! И число мобильных пользователей по всему миру неуклонно растет!</span>
-                    </p>
-                    <p>
-                        <span style="font-family:'Humnst777 BT Roman', 'Humnst777 BT', sans-serif;font-weight:400;"><br></span>
-                    </p>
-                    <p>
-                        <span style="font-family:'Humnst777 BT Roman', 'Humnst777 BT', sans-serif;font-weight:400;">Вы можете заметить, что огромный процент просматриваемых видео анимирован!</span>
-                    </p>
-		</div>
-		<div id="main__info">
-                    <p><span>г.Москва, метро Бауманская, ул. Спартаковская, д.2</span></p>
-                    <p><span>ТЕЛ. 8 920 105 6539,&nbsp; e-mail: artmultik@yandex.ru</span></p>
-		</div>
-        </div>
+        
+        
+        -->
+        
+        
     </body>
 </html>

@@ -1,61 +1,41 @@
-body{
-	background-color:black;
-	color:white;
+/*body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
-img{
-	width: 100vw;
+main{
+    flex:1 0 auto;
+}*/
+.container{
+    width: 90%;
+    min-width: 992px;
+    max-width: 1600px;
 }
-#main{
-	max-width:1600px;
-	min-width:900px;
+nav.first{
+    background: url('../i/main.jpg') no-repeat top center;
+    height: 833px;
 }
-#main__img{
-	width: 100vw;
+.logos{
+    font-size: 50px;
+    padding-top: 500px;
+    padding-left: 30%;
+    text-transform:uppercase;
+    font-weight: bold;
+    font-style:italic;
 }
-.main__cart_item{
-	float:left;
+.main__black p{
+    background: black;
+    color:white;
+    margin-top: 0;
+    padding: 30px 150px;
 }
-.main__cart_item{
-	width:500px;
+.main__black .container, .main__white .container{
+    width: 70%;
 }
-.main__cart_img{
-    max-width: 100%;
+.main__white span{
+    text-transform:uppercase;
+    font-weight: bold;
 }
-@font-face {
-    font-family: 'Humnst777 BT';
-    src: url('../f/Humanist777BT-RomanB.eot');
-    src: url('../f/Humanist777BT-RomanB.eot?#iefix') format('embedded-opentype'),
-        url('../f/Humanist777BT-RomanB.woff2') format('woff2'),
-        url('../f/Humanist777BT-RomanB.woff') format('woff'),
-        url('../f/fHumanist777BT-RomanB.ttf') format('truetype'),
-        url('../f/fHumanist777BT-RomanB.svg#Humanist777BT-RomanB') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-.h{
-    font-family: 'Humnst777 BT';
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'SIMSUNB';
-    src: url('../f/SIMSUNB.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-.h2{
-    font-family: 'SIMSUNB';
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'TT0857M_';
-    src: url('../f/TT0857M_.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-.h3{
-    font-family: 'TT0857M_';
-    font-weight: normal;
-    font-style: normal;
+.page-footer{
+    background: #333;
 }
