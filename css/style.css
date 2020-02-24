@@ -1,21 +1,32 @@
-/*body{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-main{
-    flex:1 0 auto;
-}*/
 .container{
-    width: 90%;
+    width: 100%;
+}
+#container-main{
+    width: 100%;
     min-width: 992px;
     max-width: 1600px;
 }
 nav.first{
-    background: url('../i/main.jpg') no-repeat top center;
-    height: 833px;
+    /*background: url('../i/main.jpg') no-repeat top center;*/
+    background: transparent;
+    height: 874px;
+    overflow: hidden;
 }
+nav.first video{
+    position:absolute;
+    z-index: -1;
+    height: 874px;
+}
+nav .sidenav-trigger{
+    position:relative;
+    float:none;
+    margin:0;
+}
+nav .sidenav-trigger i{
+    margin-left:20px;
+}  
 .logos{
+    display: none;
     font-size: 50px;
     padding-top: 500px;
     padding-left: 30%;
@@ -23,19 +34,57 @@ nav.first{
     font-weight: bold;
     font-style:italic;
 }
-.main__black p{
-    background: black;
+#main__black{
     color:white;
-    margin-top: 0;
-    padding: 30px 150px;
+    background: black;
 }
-.main__black .container, .main__white .container{
-    width: 70%;
+#main__black .container, #main__white .container{
+    width: 40%;
 }
-.main__white span{
+#main__black p, #main__white p{
+    margin: 0;
+    padding: 30px 0;
+}
+#main__white p{
+    padding-top: 0;
+}
+#main__black, #main__white, #main__submenu{
+    width: 100%;
+}
+#main__submenu{
+    margin-top:15px;
+}
+#main__white span{
     text-transform:uppercase;
     font-weight: bold;
 }
 .page-footer{
     background: #333;
 }
+.page-footer .row{
+    margin-bottom: 0;
+}
+/*
+#wrap1-left{
+    width: 100%;
+    background: url( "../i/v4.jpg") 0px 1080px  no-repeat;
+    position:relative;
+    z-index: -10;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+#wrap-right{
+    width: 100%;
+    background: url( "../i/v2.jpg") top right no-repeat;
+    position:relative;
+    z-index: -10;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+#wrap-left{
+    width: 100%;
+    background: url( "../i/v3.jpg") top left no-repeat;
+    position:relative;
+    z-index: -10;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+*/
+

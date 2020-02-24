@@ -12,17 +12,25 @@
         <script>
             $(document).ready(function(){
               $('.sidenav').sidenav();
+              $('.logos').delay(5000).show(1000);
             });
         </script>
     </head>
     <body>
         
         
+<div id="wrap-left">
+    <div id="wrap-right">
+        <div id="wrap1-left">
         
-        
-        <div class="container">
+        <div class="container" id="container-main">
             <nav class="first">
                 <div class="nav-wrapper">
+                    <video autoplay muted loop id="myVideo">
+                        <source src="v/Shapka.mp4" type="video/mp4">
+                        <source src="v/Shapka.ogg" type='video/ogg; codecs="theora, vorbis"'>
+                        <source src="v/Shapka.webm" type='video/webm; codecs="vp8, vorbis"'>
+                    </video>
                     <ul class="right hide-on-med-and-down">
                         <li><a class="waves-effect" href="#">Студия</a></li>
                         <li><a class="waves-effect" href="#">Портфолио</a></li>
@@ -33,20 +41,25 @@
                         <li><a class="waves-effect" href="#">Портфолио</a></li>
                         <li><a class="waves-effect" href="#">Контакты</a></li>
                     </ul>
-                    <a href="#" data-target="slide-out" class="sidenav-trigger "><i class="material-icons">menu</i></a>
+                    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <div class="logos">Пришло время<br>поймать волну!</div>
                 </div>
             </nav>
             
-            <div class="main__black center-align">
-                <p>С помощью развлекательного и запоминающегося видеоконтента, вы можете повысить узнаваемость бренда для своего бизнеса или веб-сайта.</p>
-                <div class="container">
-                <div class="row">
-                    <div class="col s3 center-align">Коммерческие ролики</div>
-                    <div class="col s3 center-align">Анимационные фильмы</div>
-                    <div class="col s3 center-align">Дизайн персонажей</div>
-                    <div class="col s3 center-align">Иллюстрации</div>
+            <div id="main__black">
+                <div class="container center-align">
+                    <p>С помощью развлекательного и запоминающегося видеоконтента, вы можете повысить узнаваемость бренда для своего бизнеса или веб-сайта.</p>
                 </div>
+            </div>
+            
+            <div id="main__submenu">
+                <div class="container center-align">
+                    <div class="row">
+                        <div class="col s3 center-align">Коммерческие ролики</div>
+                        <div class="col s3 center-align">Анимационные фильмы</div>
+                        <div class="col s3 center-align">Дизайн персонажей</div>
+                        <div class="col s3 center-align">Иллюстрации</div>
+                    </div>
                 </div>
             </div>
             
@@ -54,7 +67,7 @@
                 <div class="row">
                     
                     <div class="col s12 l6">
-                        <div class="card">
+                        <div class="card hoverable">
                             <div class="card-image">
                                 <img src="i/v1_503.jpg"/>
                                 <span class="card-title">Card Title</span>
@@ -62,7 +75,7 @@
                         </div>
                     </div>
                     <div class="col s12 l6">
-                        <div class="card">
+                        <div class="card hoverable">
                             <div class="card-image">
                                 <img src="i/v2_503.jpg"/>
                                 <span class="card-title">Card Title</span>
@@ -70,7 +83,7 @@
                         </div>
                     </div>
                     <div class="col s12 l6">
-                        <div class="card">
+                        <div class="card hoverable">
                             <div class="card-image">
                                 <img src="i/v3_503.jpg"/>
                                 <span class="card-title">Card Title</span>
@@ -78,7 +91,7 @@
                         </div>
                     </div>
                     <div class="col s12 l6">
-                        <div class="card">
+                        <div class="card hoverable">
                             <div class="card-image">
                                 <img src="i/v4_503.jpg"/>
                                 <span class="card-title">Card Title</span>
@@ -88,18 +101,18 @@
                    
                 </div>
             </div>
-
-            <div class="main__white center-align">
-                <div class="container">
-                <p>
-                    Средний мобильный пользователь тратит до <span>четырех часов</span>
-                    в день на просмотр видео! И число мобильных пользователей по всему миру неуклонно растет!<br>
-                    Вы можете заметить, что огромный процент просматриваемых видео анимирован!
-                </p>
+            
+            <div id="main__white">
+                <div class="container center-align">
+                    <p>
+                        Средний мобильный пользователь тратит до <span>четырех часов</span>
+                        в день на просмотр видео! И число мобильных пользователей по всему миру неуклонно растет!<br>
+                        Вы можете заметить, что огромный процент просматриваемых видео анимирован!
+                    </p>
                 </div>
             </div>
-
-            <footer class="page-footer">
+            
+            <footer class="page-footer center-align">
                 <div class="container">
                     <div class="row">
                         <div class="col l6 s12">
@@ -110,39 +123,21 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col l4 offset-l2 ">
+                        <div class="col l6 s12 center-align">
                             <h5>Menu</h5>
-                            <ul class="">
+                            <ul>
                                 <li><a class="waves-effect gray-text text-lighten-3" href="#">Студия</a></li>
                                 <li><a class="waves-effect gray-text text-lighten-3" href="#">Портфолио</a></li>
                                 <li><a class="waves-effect gray-text text-lighten-3" href="#">Контакты</a></li>
                             </ul>
-
                         </div>
                     </div>
                 </div>
-                
-                    
-                
-
             </footer>
-        
-        
-        
-        
+
         </div>
-        <!--         
-        
-        
-        
-		<div id="main__footer">
-                    
-                    
-		</div>
-        
-        
-        -->
-        
+            
+</div></div></div>
         
     </body>
 </html>
