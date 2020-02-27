@@ -12,8 +12,8 @@
         <script>
             $(document).ready(function(){
               $('.sidenav').sidenav();
-              //$('.logos').delay(5000).show();
-              setTimeout(function(){document.getElementById('logos').style.display="block";}, 2000);
+              $('#logos').delay(2000).fadeIn(1000);
+              //setTimeout(function(){document.getElementById('logos').style.display="block";}, 2000);
             });
         </script>
     </head>
@@ -43,7 +43,7 @@
                         <li><a class="waves-effect" href="#">Контакты</a></li>
                     </ul>
                     <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                    <div id="logos">Пришло время<br>поймать волну!</div>
+                    <div id="logos"><!-- Пришло время<br>поймать волну! --><img src="../v/prishlo_vremya.png" alt=""></div>
                 </div>
             </nav>
             
