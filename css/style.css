@@ -12,6 +12,9 @@ nav.first{
     height: 874px;
     overflow: hidden;
 }
+nav.first ul a, #main__submenu a, #main__footer ul a{
+    text-transform:uppercase;
+}
 nav.first video{
     position:absolute;
     z-index: -1;
@@ -24,16 +27,42 @@ nav .sidenav-trigger{
 }
 nav .sidenav-trigger i{
     margin-left:20px;
-}  
+}
+/*#logos:hover{
+    animation-play-state:paused;
+    background: grey;
+}*/
 #logos{
-    display: none;
-    font-size: 50px;
-    padding-top: 500px;
-    padding-left: 30%;
+    /*font-size: 50px;
     text-transform:uppercase;
     font-weight: bold;
-    font-style:italic;
+    font-style:italic;*/
+    background: url('../v/33.png') no-repeat;
+    background-size: cover;
+    visibility: hidden;
+    margin-top: 500px;
+    margin-left: 30%;
+    position:absolute;
+    z-index: 10;
+    width: 600px;
+    height: 140px;
+    
+    animation-name: vp;
+    animation-timing-function:ease;
+    animation-delay:2s;
+    animation-iteration-count:infinite;
+    animation-duration: 1s;
+    /*
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state:running;
+    */
 }
+@keyframes vp {
+    from {visibility: hidden;}
+    to {visibility: visible;}
+}
+
 #main__black{
     color:white;
     background: black;
@@ -64,6 +93,35 @@ nav .sidenav-trigger i{
 .page-footer .row{
     margin-bottom: 0;
 }
+@font-face {
+    font-family: 'gillsansregular';
+    src: url('../f/gillsansregular-webfont.eot');
+    src: url('../f/gillsansregular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../f/gillsansregular-webfont.woff2') format('woff2'),
+         url('../f/gillsansregular-webfont.woff') format('woff'),
+         url('../f/gillsansregular-webfont.ttf') format('truetype'),
+         url('../f/gillsansregular-webfont.svg#gillsansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'GillSans';
+    src: url('../f/GillSans.eot');
+    src: url('../f/GillSans.eot?#iefix') format('embedded-opentype'),
+        url('../f/GillSans.woff2') format('woff2'),
+        url('../f/GillSans.woff') format('woff'),
+        url('../f/GillSans.ttf') format('truetype'),
+        url('../f/GillSans.svg#GillSans') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    font-family: 'GillSans';
+}
+
+
+
 /*
 #wrap1-left{
     width: 100%;
