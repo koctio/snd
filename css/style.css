@@ -1,5 +1,33 @@
+.footer-address {
+    text-align: left;
+}
+/*.footer-address p{*/
+    /*margin: 0px;*/
+    /*padding: 0px;*/
+/*}*/
+.footer-address-text-block {
+    margin: 30px 0 0 0;
+    padding: 0px;
+    color: #999999;
+}
+
+.page-footer {
+    padding-top: 0px;
+}
+#footer-menu{
+    text-align: left;
+    padding: 0 0 0 65%;
+}
+#top-menu{
+    padding: 20px 100px 0 0;
+}
+#top-menu a{
+    color: #fff;
+}
+
 .container{
     width: 100%;
+    font-size: 17px;
 }
 #container-main{
     width: 100%;
@@ -14,6 +42,7 @@ nav.first{
 }
 nav.first ul a, #main__submenu a, #main__footer ul a{
     text-transform:uppercase;
+    color: #999999;
 }
 nav.first video{
     position:absolute;
@@ -37,7 +66,7 @@ nav .sidenav-trigger i{
     text-transform:uppercase;
     font-weight: bold;
     font-style:italic;*/
-    background: url('../v/33.png') no-repeat;
+   /* background: url('../v/33.png') no-repeat; */
     background-size: cover;
     visibility: hidden;
     margin-top: 500px;
@@ -46,7 +75,7 @@ nav .sidenav-trigger i{
     z-index: 10;
     width: 600px;
     height: 140px;
-    
+
     animation-name: vp;
     animation-timing-function:ease;
     animation-delay:2s;
@@ -68,11 +97,13 @@ nav .sidenav-trigger i{
     background: black;
 }
 #main__black .container, #main__white .container{
-    width: 40%;
+    width: 60%;
 }
 #main__black p, #main__white p{
     margin: 0;
-    padding: 30px 0;
+    padding: 45px 0;
+    font-size: 25px;
+    font-family:GillSans;
 }
 #main__white p{
     padding-top: 0;
@@ -81,7 +112,7 @@ nav .sidenav-trigger i{
     width: 100%;
 }
 #main__submenu{
-    margin-top:15px;
+    margin: 60px 0;
 }
 #main__white span{
     text-transform:uppercase;

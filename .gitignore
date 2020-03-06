@@ -1,3 +1,10 @@
 nbproject
 home.html
 css/home.css
+.idea/*
+.DS_Store
+*.zip
+*.log
+*.pdf
+*.xls
+*.db
